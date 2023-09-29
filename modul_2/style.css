@@ -1,0 +1,87 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #707070;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  background-color: #3168DD;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+header .icon {
+  font-size: 100px;
+  color: #022152;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: auto;
+  max-width: 320px;
+  height: 100vh;
+}
+
+.main-nav {
+  background-color: #3168DD;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  border-bottom: 4px solid #022152;
+}
+.main-nav .main-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+@media (min-width: 1000px) {
+  .main-nav .main-menu {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+.main-nav .main-menu li {
+  flex: 0 0 60px;
+}
+.main-nav .main-menu li .icon {
+  color: white;
+  font-size: 32px;
+}
+.main-nav .main-menu li a {
+  text-decoration: none;
+  height: 64px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav .main-menu li.active a {
+  background-color: white;
+  border-radius: 0 0 30px 30px;
+}
+.main-nav .main-menu li.active .icon {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

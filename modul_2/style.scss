@@ -1,0 +1,93 @@
+*,html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color:   white;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #707070;
+    margin-bottom: 0.5rem;
+}
+
+header {
+    background-color: #3168DD;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    // Ingen fast höjd, innehåll + padding styr höjden på header.
+    margin-bottom: 2rem;
+   .icon {
+        font-size: 100px;
+        color: #022152;
+        margin-bottom: 1rem;
+    }
+}
+
+section {
+    margin: auto;
+    max-width: 320px;
+    // Jag har satt en max-bredd på section för att den ska vara lika bred på alla storlekar så som det ser ut på förlagan.
+    height: 100vh;
+}
+
+.main-nav {
+    background-color: #3168DD;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    border-bottom: 4px solid #022152;
+    // ul
+    .main-menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+        @media (min-width: 1000px) {
+            max-width: 1000px;
+            margin: auto;
+        }
+        li {
+            flex: 0 0 60px;
+            // För att lättare kunna styra storleken på "touch-ytan" och få en precis border-radius.
+            .icon {
+                color: white;
+                font-size: 32px;
+            }
+            a {
+                text-decoration: none;
+                // Jag har valt att sätt en höjd på a-taggen och låta den styra innehållet.
+                height: 64px;
+                flex: 1 1 auto;
+                // För att centrera ikoner.
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &.active {
+                a { 
+                    background-color: white;
+                    border-radius: 0 0 30px 30px;
+                }
+                .icon {
+                    color: black;
+                }
+            }
+        }    
+    }
+}    

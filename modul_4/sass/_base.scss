@@ -1,0 +1,129 @@
+body {
+    font-family: $primary-font;
+    color: $text-color;
+    @media (min-width:768px) {
+        background-color: $bg-color;
+        padding: 1rem;
+    }
+    @media (min-width:1300px) {
+        padding: 2rem;
+    }
+}
+
+
+.main-logo { //Den här ligger utanför header för jag vill ha samma styling då den ligger på två ställen, i header och i article.
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    .logo {
+        margin-right: 1rem;
+    }
+}
+
+.sign-form {
+    @media (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form-wrap {
+        width: 100%;
+        margin-bottom: 1.8rem;
+        @media (min-width:1300px) {
+            margin-bottom: 2rem;
+        }
+        label {
+            font-size: 1rem;
+            font-weight: 500;
+            color: $text-color;
+        }
+        .input-field {
+            width: 100%;
+            height: 54px;
+            padding-left: 1rem;
+            margin-top: .8rem;
+            border-radius: 6px;
+            border: 1px solid $input-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            color: $input-text;
+            &::placeholder {
+                font-size: 1rem;
+                color: $input-text;
+            }
+            &:focus {
+            outline: none;
+            border: 1px solid $focus-color;
+            }
+            &#city-select {
+                appearance: none; //Tar bort befintlig pil.
+                background-image: url(img/Arrow_down.svg);
+                background-repeat: no-repeat;
+                background-position: right;
+                option {
+                    &:checked {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.half { //Har lagt en extra klass för att kunna styla dem så att de tar upp 50%ish.
+            @media (min-width:768px) {
+                flex: 0 0 calc(100%/2 - 1rem);
+            }
+        }
+        &.sign-up {
+            margin-bottom: 0;
+            a {
+                color: $input-text;
+                font-size: 1rem;
+                display: block;
+                margin-bottom: 1.8rem;
+                @media (min-width:768px) {
+                    margin: 0;
+                }
+            }
+            #btn-submit {
+                background-color: $button-primary;
+                display: block; // För att få ner den eftersom den är ett inline-element.
+                width: 100%;
+                padding: .8rem 3rem;
+                border: 2px solid transparent;
+                border-radius: 6px;
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+                &:focus {
+                outline: none;
+                border: 2px solid $focus-color;
+                }
+                @media (min-width:768px) {
+                    width: auto;
+                    // För att den inte ska ta upp fullbredd, texten + padding bestämmer bredd.
+                }
+            }
+            @media (min-width:768px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @media (min-width:1300px) {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+.main-list {
+    list-style: inside;
+    .list-item {
+        font-size: 1rem;
+        color: $text-color;
+        margin-bottom: 1.1rem;
+        @media (min-width:1300px) {
+            font-size: 1.1rem;
+        }
+    }
+}

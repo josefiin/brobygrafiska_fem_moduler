@@ -1,0 +1,48 @@
+h1,h2,h3,h4,h5,p{
+    color: $text-color;
+    line-height: 1.45;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    @media (min-width: 768px) {
+        font-size: 2.25rem;
+    }
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    @media (min-width: 768px) {
+        font-size: 1.4rem;
+    }
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.6rem;
+    }
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.ingress {
+    font-size: 1rem;
+    font-weight: 400;
+    @media (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 400;
+}

@@ -1,0 +1,195 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  flex: 0 0 212px;
+  height: 318px;
+  margin-right: 0.4rem;
+  position: relative;
+  transition: flex 0.3s ease-in-out;
+  overflow: hidden;
+}
+.card > img {
+  width: 212px;
+}
+.card:hover {
+  flex: 0 0 430px;
+}
+.card:hover figure {
+  opacity: 1;
+}
+.card figure {
+  opacity: 0;
+  width: 430px;
+  position: absolute;
+  inset: 0;
+  transition: all 0.3s ease-in-out;
+}
+.card .card-text {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 70%, rgba(255, 255, 255, 0) 100%);
+  padding: 3rem 1rem 1rem;
+  position: absolute;
+  bottom: 0;
+}
+.card .card-text .text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.card .card-text .text-wrapper .movie-info {
+  display: flex;
+  align-items: center;
+}
+.card .card-text .text-wrapper .movie-info p {
+  margin-right: 1rem;
+}
+.card .card-text .text-wrapper .movie-info .age-limit {
+  font-size: 0.7rem;
+  border: 1px solid white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.05rem 0.3rem;
+}
+.card .card-text .text-wrapper .rating {
+  display: flex;
+  align-items: center;
+}
+.card .card-text .text-wrapper .rating img {
+  width: 40px;
+  margin-right: 0.4rem;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: #FFFFFF;
+  line-height: 1.45;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.ingress {
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .ingress {
+    font-size: 1.2rem;
+  }
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 2rem;
+  }
+}
+
+.main-nav {
+  padding: 1.5rem 0;
+}
+.main-nav .logo img {
+  width: 140px;
+}
+
+.hero-image {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.hero-image img {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .hero-image img {
+    height: 754px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.hero-image .hero-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .hero-image .hero-text {
+    bottom: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero-image .hero-text .container h2, .hero-image .hero-text .container h1, .hero-image .hero-text .container p {
+    max-width: 540px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-image .hero-text .container h2, .hero-image .hero-text .container h1, .hero-image .hero-text .container p {
+    max-width: 780px;
+  }
+}
+
+.slider {
+  margin-bottom: 2rem;
+  padding-right: 0;
+}
+.slider .card-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}/*# sourceMappingURL=style.css.map */

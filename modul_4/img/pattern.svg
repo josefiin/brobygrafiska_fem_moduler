@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="333.491" height="338.24" viewBox="0 0 333.491 338.24">
+  <g id="pattern" transform="translate(-912.948 -90.682)">
+    <ellipse id="Ellipse_259" data-name="Ellipse 259" cx="56" cy="56.5" rx="56" ry="56.5" transform="translate(912.948 109.923)" fill="#ff8c6b"/>
+    <circle id="Ellipse_264" data-name="Ellipse 264" cx="35.755" cy="35.755" r="35.755" transform="translate(1155.868 104.692)" fill="#ff8c6b"/>
+    <circle id="Ellipse_260" data-name="Ellipse 260" cx="44.693" cy="44.693" r="44.693" transform="translate(1102.319 324.909)" fill="#161111"/>
+    <ellipse id="Ellipse_269" data-name="Ellipse 269" cx="28.035" cy="27.629" rx="28.035" ry="27.629" transform="translate(1071.516 263.151)" fill="#f27d59"/>
+    <circle id="Ellipse_266" data-name="Ellipse 266" cx="29.66" cy="29.66" r="29.66" transform="translate(1012.273 308.657)" fill="#8271fd"/>
+    <path id="Intersection_1" data-name="Intersection 1" d="M0,0A56.478,56.478,0,1,1,0,112.953Z" transform="translate(1128.322 185.14)" fill="#161111"/>
+    <path id="Intersection_5" data-name="Intersection 5" d="M0,0C19.3,0,34.942,15.28,34.942,34.13S19.3,68.259,0,68.259Z" transform="translate(963.588 299.718)" fill="#f27d59"/>
+    <path id="Intersection_6" data-name="Intersection 6" d="M0,0C19.325,0,34.991,15.264,34.991,34.094S19.325,68.188,0,68.188Z" transform="translate(1009.81 115.425) rotate(-45)" fill="#161111"/>
+    <path id="Intersection_2" data-name="Intersection 2" d="M0,0C31.48,0,57,25.3,57,56.5S31.48,113,0,113Z" transform="translate(912.948 228.923)" fill="#161111"/>
+    <path id="Intersection_3" data-name="Intersection 3" d="M0,0A43.881,43.881,0,0,1,43.881,43.881,43.881,43.881,0,0,1,0,87.762Z" transform="translate(1121.898 216.832) rotate(180)" fill="#8271fd"/>
+    <path id="Intersection_4" data-name="Intersection 4" d="M0,0A43.881,43.881,0,0,1,43.881,43.881,43.881,43.881,0,0,1,0,87.762Z" transform="translate(1227.378 328.972) rotate(180)" fill="#8271fd"/>
+    <path id="Path_264" data-name="Path 264" d="M0,0,81.646,81.646H0Z" transform="translate(922.022 347.277)" fill="#8271fd"/>
+    <path id="Path_265" data-name="Path 265" d="M0,0,81.646,81.646H0Z" transform="translate(1020.555 428.923) rotate(-90)" fill="#f27d59"/>
+    <path id="Path_267" data-name="Path 267" d="M0,0,81.646,81.646H0Z" transform="translate(1164.793 428.923) rotate(-90)" fill="#f27d59"/>
+    <path id="Path_266" data-name="Path 266" d="M0,0,81.646,81.646H0Z" transform="translate(990.095 288.125) rotate(-90)" fill="#161111"/>
+  </g>
+</svg>

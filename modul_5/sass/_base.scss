@@ -1,0 +1,68 @@
+body {
+    background-color: $primary-dark;
+    font-family: $primary-font;
+    -webkit-font-smoothing: antialiased;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.card {
+    flex: 0 0 212px;
+    height: 318px;
+    margin-right: 0.4rem;
+    position: relative;
+    transition: flex 0.3s ease-in-out;
+    overflow: hidden; //För att ta bort allt utanför elementet.
+    & > img { //Stylar img direkt under card.
+        width: 212px; //Bredd för att bilden inte ska växa.
+    }
+    &:hover {
+        flex: 0 0 430px; //Kortet går från 212px till 430px vid hover.
+        figure {
+            opacity: 1;
+        }
+    }
+    figure {
+        opacity: 0;
+        width: 430px;
+        position: absolute;
+        inset: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .card-text {
+        background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(255,255,255,0) 100%);
+        padding: 3rem 1rem 1rem; //Mer padding upptill för att bg-färg ska tonas ut snyggare.
+        position: absolute;
+        bottom: 0;
+        .text-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            .movie-info {
+                display: flex;
+                align-items: center;
+                p {
+                    margin-right: 1rem;
+                }
+                .age-limit {
+                    font-size: .7rem;
+                    border: 1px solid white;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: .05rem .3rem;
+                }
+            }
+            .rating {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 40px;
+                    margin-right: .4rem;
+                }
+            }
+        }
+    }
+}

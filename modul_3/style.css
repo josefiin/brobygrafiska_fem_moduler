@@ -1,0 +1,191 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282C3E;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+header {
+  background-color: #090718;
+}
+header .wrapper {
+  display: flex;
+}
+@media (min-width: 768px) {
+  header .wrapper {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header .wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+header .wrapper .main-menu {
+  flex: 0 0 80%;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu {
+    flex: initial;
+    display: flex;
+    align-items: center;
+  }
+}
+header .wrapper .main-menu .menu-logo {
+  padding-top: 0.2rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu .menu-logo {
+    display: block;
+    margin-right: 2rem;
+  }
+}
+header .wrapper .main-menu .menu-logo .icon {
+  color: #8A6CB6;
+  font-size: 2rem;
+}
+header .wrapper .main-menu .menu-list {
+  list-style: none;
+  display: flex;
+}
+header .wrapper .main-menu .menu-list .menu-item {
+  flex: 1 1 auto;
+  display: flex;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu .menu-list .menu-item {
+    margin-right: 2rem;
+  }
+}
+header .wrapper .main-menu .menu-list .menu-item .menu-link {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 1.1rem 0;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu .menu-list .menu-item .menu-link {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+}
+header .wrapper .main-menu .menu-list .menu-item .menu-link .menu-text {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu .menu-list .menu-item .menu-link .menu-text {
+    display: block;
+  }
+}
+header .wrapper .main-menu .menu-list .menu-item .menu-link.active {
+  background-color: #8A6CB6;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu .menu-list .menu-item .menu-link.active {
+    background-color: transparent;
+    border-bottom: 5px solid #8A6CB6;
+  }
+}
+header .wrapper .main-menu .menu-list .menu-item .menu-link.active .menu-icon {
+  color: white;
+}
+header .wrapper .main-menu .menu-list .menu-item .menu-link .menu-icon {
+  color: #8A6CB6;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  header .wrapper .main-menu .menu-list .menu-item .menu-link .menu-icon {
+    display: none;
+  }
+}
+header .wrapper .right-nav {
+  background-color: #221C36;
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  header .wrapper .right-nav {
+    flex: initial;
+    background-color: transparent;
+  }
+}
+header .wrapper .right-nav img {
+  width: 42px;
+  border-radius: 50px;
+  display: block;
+}
+header .wrapper .right-nav .search-form {
+  position: relative;
+  padding-right: 2.5rem;
+  display: none;
+}
+@media (min-width: 1200px) {
+  header .wrapper .right-nav .search-form {
+    display: block;
+  }
+}
+header .wrapper .right-nav .search-form .btn-search {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+header .wrapper .right-nav .search-form .btn-search .icon-search {
+  color: #A6A8B5;
+  font-size: 1.8rem;
+}
+header .wrapper .right-nav .search-form #q {
+  width: 290px;
+  height: 42px;
+  padding-left: 3.2rem;
+  padding-top: 0.4rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #282C3E;
+}
+header .wrapper .right-nav .search-form #q::-moz-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #A6A8B5;
+}
+header .wrapper .right-nav .search-form #q::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #A6A8B5;
+}/*# sourceMappingURL=style.css.map */

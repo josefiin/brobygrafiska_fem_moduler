@@ -1,0 +1,64 @@
+@import 'sass/reset';
+@import 'sass/variables';
+@import 'sass/base';
+@import 'sass/typography';
+
+.container {
+    margin: auto;
+    padding: 0 1rem;
+    @media (min-width: 1400px) {
+        max-width: 1600px;
+        padding: 0 2rem;
+    }
+}
+
+.main-nav {
+    padding: 1.5rem 0;
+    .logo {
+        img {
+            width: 140px;
+        }
+    }
+}
+
+.hero-image {
+    position: relative;
+    margin-bottom: 2rem;
+    img {
+        width: 100%;
+        @media (min-width: 1400px) {
+            height: 754px; //Vill ha en höjd på bilden i fullbredd.
+            object-fit: cover;
+        }
+    }
+    .hero-text {
+        position: absolute;
+        bottom: 2rem;
+        left:0;
+        right: 0;
+        @media (min-width: 768px) {
+            bottom: 4rem;
+        }
+        .container { 
+            h2, h1, p { //Vill ha en bredd på dessa så att de inte tar upp maxbredd.
+                @media (min-width: 768px) {
+                    max-width: 540px;
+                }
+                @media (min-width: 1400px) {
+                    max-width: 780px;
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    margin-bottom: 2rem;
+    padding-right: 0; //0 för att ta bort padding som .container styr. Vill att cardsen ska "försvinna" utanför till höger.
+    .card-wrapper {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden; //För att det inte ska gå att scrolla upp och ner.
+        
+    }
+}

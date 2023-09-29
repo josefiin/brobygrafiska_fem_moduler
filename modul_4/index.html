@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 5</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="main-logo" href="#">
+                <img class="logo" src="img/Logo.svg" alt="Logo EasyClass">
+                <p>EasyClass</p>
+            </a>
+        </header>
+        <main>
+            <h1>Get started</h1>
+            <form action="" class="sign-form">
+                <div class="form-wrap half"> 
+                    <!-- Jag har lagt label och input i en wrap för att kunna sätta flex på förälder och sätta olika bred på child. -->
+                    <label for="city-select">City</label>
+                    <select name="c" id="city-select" class="input-field">
+                        <option value="">Choose city</option>
+                        <option value="huskvarna">Huskvarna</option>
+                        <option value="goteborg">Göteborg</option>
+                        <option value="stockholm">Stockholm</option>
+                        <option value="newyork">New York</option>
+                    </select>    
+                </div>
+                <div class="form-wrap">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="name@mail.com" class="input-field">
+                </div>
+                <div class="form-wrap">
+                    <label for="mobile">Mobile number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Mobile number" class="input-field">
+                </div>
+                <div class="form-wrap half">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="••••••••••••" class="input-field">
+                </div>
+                <div class="form-wrap half">
+                    <label for="confirm-pass">Confirm password</label>
+                    <input type="password" name="confirm-pass" id="confirm-pass" placeholder="••••••••••••" class="input-field">
+                </div>
+                <div class="form-wrap sign-up">
+                    <a href="#">Already a member? Log in.</a>
+                    <input type="submit" id="btn-submit" value="Sign up">
+                </div>
+            </form>
+        </main>
+        <article>
+            <img class="graphic" src="img/pattern.svg" alt="Pattern EasyClass">
+            <div class="text-wrapper">
+                <h2>EasyClass is the best option</h2>
+                <ul class="main-list">
+                    <li class="list-item">Get instant feedback</li>
+                    <li class="list-item">Put your learning into practice</li>
+                    <li class="list-item">Learn by doing</li>
+                </ul>
+            </div>
+                <a class="main-logo" href="#">
+                    <img class="logo" src="img/Logo.svg" alt="Logo EasyClass">
+                    <p>EasyClass</p>
+                </a>
+        </article>
+    </div>
+</body>
+</html>

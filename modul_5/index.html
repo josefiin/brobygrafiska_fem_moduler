@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 5</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Har lagt classen container på flera element där jag vill ha samma padding och width -->
+    <header class="container">
+        <nav class="main-nav">
+            <a href="#" class="logo">
+                <img src="img/cmore.svg" alt="Cmore logotyp">
+            </a>
+        </nav>
+    </header>
+    <div class="hero-image">
+        <picture>
+            <source srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="img/hero_square.jpg 1x, img/hero_square@2x.jpg 1x">
+            <img src="img/hero.jpg" alt="The dark night movie">
+        </picture>
+        <div class="hero-text">
+            <div class="container">
+                <h2>Filmtips: Batman</h2>
+                <h1>The Dark Knight-triologin</h1>
+                <p class="ingress">Se hela Christopher Nolans succétrilogi om Batman (Christian Bale) som får tampas med figurer som Jokern (Heath Ledger), Catwoman (Anne Hathaway) och Bane (Tom Hardy).</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <article class="slider container"> 
+            <h3>Nya filmer</h3>
+            <div class="card-wrapper">
+                <section class="card">
+                    <img src="img/convert_019@2x.png" alt="The night manager movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_066-1@2x.png" alt="The Bay movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_050@2x.png" alt="">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_119@2x.png" alt="Justice League movie">
+                    <figure>
+                        <img src="img/justice_leage.jpg" alt="The Flash, Batman och Wonderwoman från filmen Justice League.">
+                        <figcaption class="card-text">
+                            <h4>Justice League</h4>
+                            <p>Storslagen superhjälte-action där Batman samlar ihop en rad allierade - Wonder Woman, The Flash, Aquaman och Cyborg - för att möta ett nytt fruktansvärt hot mot jorden. Men frågan är om det kommer att räcka med medlemmarna i "Justice League"?</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Action</p>
+                                    <p>2017</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.4/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/cold_pursuit.jpg" alt="Cold Pursuit movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/pineapple_express.jpg" alt="Pineapple Express movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_005@2x.png" alt="Ghost in the shell movie">
+                    <figure>
+                        <img src="img/ghost_in_the_shell.jpg" alt="Kvinna tittar ut på gata i storstad, Ghost in the shell.">
+                        <figcaption class="card-text">
+                            <h4>Ghost in the shell</h4>
+                            <p>Spektakulär sci fi-action som utspelar sig i en nära framtid där människan kan modifieras med konstgjorda delar och implantat, och där en hjärna till och med kan få en helt artificiell kropp. Här möter vi Major (Scarlett Johansson), en modifierad superpolis som söker svar om sitt förflutna.
+                                .</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Sci fi-action</p>
+                                    <p>2017</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.4/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_060@2x.png" alt="American made movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+        </article>
+        <article class="slider container"> 
+            <h3>Action filmer</h3>
+            <div class="card-wrapper">
+                <section class="card">
+                    <img src="img/convert_073@2x.png" alt="Deadpool 2 movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_074@2x.png" alt="Wonder Woman movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_085@2x.png" alt="DET movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_126@2x.png" alt="The Dark Night movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_004@2x.png" alt="Lego Ninja movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_005-1@2x.png" alt="Red Sparrow movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/convert_007@2x.png" alt="The Cry movie">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card">
+                    <img src="img/indiana_jones.jpg" alt="Indiana Jones">
+                    <figure>
+                        <img src="img/Peppermint2x.png" alt="Kvinna riktar pistol från filmen Peppermint.">
+                        <figcaption class="card-text">
+                            <h4>Peppermint</h4>
+                            <p>Riley Walker lever ett vanligt förortsliv i Los Angeles när hennes man och dotter blir mördade av medlemmar i en våldsam drogkartell.</p>
+                            <div class="text-wrapper">
+                                <div class="movie-info">
+                                    <p>Actionthriller</p>
+                                    <p>2018</p>
+                                    <p class="age-limit">+15</p>
+                                </div>
+                                <div class="rating">
+                                    <img src="img/imdb_1.svg" class="imdb-icon" alt="imdb logo">
+                                    <p>6.5/10</p>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

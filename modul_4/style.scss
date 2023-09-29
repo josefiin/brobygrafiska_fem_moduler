@@ -1,0 +1,85 @@
+@import 'sass/reset';
+@import 'sass/variables';
+@import 'sass/base';
+@import 'sass/typography';
+
+
+.container {
+    margin: auto;
+    @media (min-width:768px) {
+        border-radius: 30px;
+        overflow: hidden; //För att få samma effekt med rundade hörn på header och article.
+    }
+    @media (min-width:1300px) {
+        max-width: 1300px;
+        display: flex;
+        // flex-wrap: wrap;
+    }
+    
+    header {
+        background-color: $primary-color;
+        padding: 1.25rem;
+        @media (min-width:768px){
+            padding: 2rem;
+        }
+        @media (min-width:1300px) {
+            display: none;
+            .main-logo {
+                display: none;
+                //Döljer logo i desktop.
+            }
+        }
+    }
+    
+    main {
+        background-color: white;
+        padding: 1.25rem; //Sätter individuell padding på main, header, article för att kunna ha bg-färg som är 100% av container.
+        @media (min-width:768px){
+            padding: 2rem;
+        }
+        @media (min-width:1300px) {
+            flex: 0 0 60%;
+            padding: 3.5rem 6rem;
+        }
+    }
+
+    article {
+        background-color: $primary-color;
+        padding: 1.25rem;
+        @media (min-width:768px) {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media (min-width:1300px) {
+            padding: 2rem 4rem 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .graphic { 
+            width: 100%;
+            margin-bottom: 1rem;
+            @media (min-width:768px) {
+                flex: 0 0 50%;
+            }
+            @media (min-width:1300px) {
+                flex: 0 0 100%;
+            }
+        }
+        .text-wrapper {
+            @media (min-width:1300px) {
+                margin: auto;
+                margin-bottom: 1.2rem;
+            }
+        }
+        .main-logo {
+            display:none;
+            @media (min-width:1300px) {
+                display: flex; //Flex för att ta fram och för att kunna centrera.
+                margin: auto;
+            }
+        }
+    }
+}  
